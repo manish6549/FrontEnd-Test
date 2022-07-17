@@ -1,0 +1,57 @@
+.App {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.m-container {
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+
+.modal-screen {
+  position: relative;
+  max-width: 560px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-modal {
+  padding: 0 34px;
+}
+
+.small-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 374px;
+  object-fit: contain;
+}
+
+.content {
+  display: inline-block;
+  position: relative;
+  bottom: 12px;
+}
+
+.material-symbols-outlined {
+  color: #D5DADE;
+  float: right;
+  padding: 7px;
+}
+
+.profile-pic {
+  border-radius: 150%; 
+  width: 40px;
+  height: 40px;
+}
+
+.author-name {
+  display: inline-block;
+  position: relative;
+  bottom: 17px;
+  left: 7px;
+  font-size: 12px;
+}

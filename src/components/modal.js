@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect} from "react";
-import './modal.css';
+import './Modal.css';
 
 
 function Modal() {
@@ -17,21 +17,26 @@ function Modal() {
   }
 
   return (
-    <div className="m-container">
-        {posts.map(post => (
-            <div key={post.id}> 
-              {post.id === 4 ? <div className="modal-screen">
-                <span class="material-symbols-outlined">
-                  close
-                </span>
-                <img className="small-thumbnail" src={post.thumbnail.small} alt="small-city-thumbainal"/> 
-                <div className="content-modal">
-                  <h2 className="title">{post.title}</h2>
-                  <p className="content">{post.content}</p>
-                  <img className="profile-pic" src={post.author.avatar} alt="author-pic"/>
-                  <p className="author-name">{post.author.name} - {post.author.role}</p>
+    <div>
+        {posts.map ( post => (
+            <div key={ post.id }> 
+            {/* if the id = 4 is true then modal with the respective data will be shown */}
+              {post.id === 4 ? 
+                <div className="m-container">
+                  <div className="modal-screen">
+                    <span class="material-symbols-outlined">
+                      close
+                    </span>
+                    <img className="small-thumbnail" src={ post.thumbnail.small } alt="small-city-thumbainal"/> 
+                    <div className="content-modal">
+                      <h2 className="modal-title">{ post.title }</h2>
+                      <p className="modal-content">{ post.content }</p>
+                      <img className="modal-profile-pic" src={ post.author.avatar } alt="author-pic"/>
+                      <p className="modal-author-name">{ post.author.name } - { post.author.role }</p>
+                    </div>
+                  </div>
                 </div>
-              </div> : "" }
+              : "" }
             </div>
         ))}
     </div>

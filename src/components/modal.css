@@ -1,16 +1,15 @@
-.App {
+.m-container {
   padding: 0;
   margin: 0;
   font-family: 'Lato', sans-serif;
-}
-
-.m-container {
-  width: 1200px;
-  margin: 100px auto;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  row-gap: 50px;
+  text-align: left;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  marginRight: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-screen {
@@ -30,7 +29,7 @@
   object-fit: contain;
 }
 
-.content {
+.modal-content {
   display: inline-block;
   position: relative;
   bottom: 12px;
@@ -42,13 +41,13 @@
   padding: 7px;
 }
 
-.profile-pic {
+.modal-profile-pic {
   border-radius: 150%; 
   width: 40px;
   height: 40px;
 }
 
-.author-name {
+.modal-author-name {
   display: inline-block;
   position: relative;
   bottom: 17px;

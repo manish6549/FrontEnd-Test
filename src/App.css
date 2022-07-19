@@ -1,37 +1,47 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
 .App {
   padding: 0;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  width: 100%;
+  z-index: -2;
 }
 
 .container {
   width: 1200px;
-  margin: 100px auto;
+  margin: 6.25rem auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  row-gap: 50px;
+  row-gap: 3.125rem;
 }
 
 .inner-container {
   position: relative;
-  max-width: 560px;
+  width: 35rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content-item {
-  padding: 0 34px;
+  padding: 0 2.125rem;
 }
 
 .large-thumbnail {
   display: inline-block;
-  max-width: 100%;
-  max-height: 374px;
+  width: 100%;
+  height: 23.375rem;
   object-fit: contain;
 }
 
 .large-thumbnail:last-child {
-  width: 50px;
+  width: 3.125;
 }
 
 h3:before {
@@ -63,23 +73,23 @@ h3:after {
 .author-name {
   display: inline-block;
   position: relative;
-  top: 24px;
+  top: 1.5rem;
 }
 
 .date {
   width: fit-content;
   position: relative;
-  left: 374px;
-  bottom: 28px;
+  left: 23.375rem;
+  bottom: 1.75rem;
 }
 
 .text-on-image {
-  width: 560px;
-  height: 52%;
+  width: 35rem;
+  height: 53%;
   position: absolute;
   background-color: gray;
   opacity: 0.8;
-  bottom: 48%;
+  bottom: 47%;
   text-align: center;
 }
 
@@ -95,3 +105,4 @@ h3:after {
 	cursor: pointer;
 	outline: inherit;
 }
+

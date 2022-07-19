@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect} from "react";
-import Modal from "./components/Modal";
+import Modal from "./Modal";
 import './App.css';
 
 
